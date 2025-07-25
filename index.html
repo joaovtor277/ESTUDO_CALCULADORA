@@ -11,15 +11,15 @@
         alert("Descubra Se Você Passou na Materia!")
 
         let notaAluno1 = parseFloat(prompt("Digite a sua primeira nota!"));
-            while (isNaN(notaAluno1) || notaAluno1 < 0 || notaAluno1 > 10 || notaAluno1 === null ||  notaaluno1.trim()==="") {
+            while (isNaN(notaAluno1) || notaAluno1 < 0 || notaAluno1 > 10 ) {
                 notaAluno1 = parseFloat(prompt("Valor inválido! Digite uma nota entre 0 e 10:"));
         }
-        let notaAluno2 = parseFloat(prompt("Digite a sua primeira nota!"));
-            while (isNaN(notaAluno2) || notaAluno2 < 0 || notaAluno2 > 10 || notaAluno2=== null ||  notaaluno2.trim()==="") {
+        let notaAluno2 = parseFloat(prompt("Digite a sua segunda nota!"));
+            while (isNaN(notaAluno2) || notaAluno2 < 0 || notaAluno2 > 10 ) {
                 notaAluno2= parseFloat(prompt("Valor inválido! Digite uma nota entre 0 e 10:"));
         }
-        let notaAluno3 = parseFloat(prompt("Digite a sua primeira nota!"));
-            while (isNaN(notaAluno3) || notaAluno3 < 0 || notaAluno3 > 10 || notaAluno3 === null ||  notaaluno3.trim()==="") {
+        let notaAluno3 = parseFloat(prompt("Digite a sua terceira nota!"));
+            while (isNaN(notaAluno3) || notaAluno3 < 0 || notaAluno3 > 10 ) {
                 notaAluno3 = parseFloat(prompt("Valor inválido! Digite uma nota entre 0 e 10:"));
         }
         let media = (notaAluno1 + notaAluno2 + notaAluno3) / 3;
@@ -28,7 +28,7 @@
             alert ("Você está reprovado!");
         } else if (media < 5.9) {
             alert ("você está em recuperação!");
-        }else {
+        } else {
             alert("você está aprovado!")
 
        
@@ -36,3 +36,5 @@
     </script>
 </body>
 </html>
+
+
